@@ -1,17 +1,14 @@
 <?php
 /**
  * Custom template tags for this theme.
- *
- * Eventually, some of the functionality here could be replaced by core features.
- *
- * @package otw
  */
 
 if ( ! function_exists( 'THEME_NAME_paging_nav' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.
  */
-function THEME_NAME_paging_nav() {
+function THEME_NAME_paging_nav()
+{
 	// Don't print empty markup if there's only one page.
 	if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
 		return;
@@ -39,7 +36,8 @@ if ( ! function_exists( 'THEME_NAME_post_nav' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
  */
-function THEME_NAME_post_nav() {
+function THEME_NAME_post_nav()
+{
 	// Don't print empty markup if there's nowhere to navigate.
 	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
 	$next     = get_adjacent_post( false, '', false );
@@ -65,7 +63,8 @@ if ( ! function_exists( 'THEME_NAME_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-function THEME_NAME_posted_on() {
+function THEME_NAME_posted_on()
+{
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -98,7 +97,8 @@ endif;
  *
  * @return bool
  */
-function THEME_NAME_categorized_blog() {
+function THEME_NAME_categorized_blog()
+{
 	if ( false === ( $all_the_cool_cats = get_transient( 'THEME_NAME_categories' ) ) ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
@@ -127,7 +127,8 @@ function THEME_NAME_categorized_blog() {
 /**
  * Flush out the transients used in THEME_NAME_categorized_blog.
  */
-function THEME_NAME_category_transient_flusher() {
+function THEME_NAME_category_transient_flusher()
+{
 	// Like, beat it. Dig?
 	delete_transient( 'THEME_NAME_categories' );
 }

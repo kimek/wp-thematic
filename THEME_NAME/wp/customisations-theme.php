@@ -3,6 +3,7 @@
 /**
  * Make global customisations to the WP Theme
  */
+
 class WpThemeCustomisations
 {
     public function __construct()

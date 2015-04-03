@@ -1,8 +1,9 @@
 <?php
 
 /**
- * Change Post > Films
+ * Give posts a different name
  */
+
 class WpEditPostName
 {
     private $singular;
