@@ -22,8 +22,8 @@
         </div>
 
         <nav class="main-navigation" role="navigation">
-            <button class="menu-toggle"><?php _e('Primary Menu', 'THEME_NAME'); ?></button>
-            <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+            <button class="menu-toggle"><?php _e('Menu', 'THEME_NAME'); ?></button>
+            <?php wp_nav_menu(array('container' => '', 'menu_class' => 'c-header-nav', 'theme_location' => 'primary')); ?>
         </nav>
     </header>
 
