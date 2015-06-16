@@ -6,8 +6,8 @@ https://github.com/jjgrainger/wp-custom-post-type-class/blob/master/examples/boo
 */
 /*
 // Post (default) - add taxonomy
-$post = new CPT('post');
-$post->register_taxonomy(array(
+$default = new CPT('post');
+$default->register_taxonomy(array(
     'taxonomy_name' => 'genre',
     'singular' => 'Genre',
     'plural' => 'Genres',
