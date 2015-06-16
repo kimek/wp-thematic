@@ -1,7 +1,7 @@
 </div>
 
 <footer class="site-footer" role="contentinfo">
-    <div class="site-footer--info">
+    <div class="site-footer__info">
         Footer
     </div>
 </footer>

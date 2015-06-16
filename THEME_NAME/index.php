@@ -7,15 +7,15 @@
             while (have_posts()) :
                 the_post();
 
-                get_template_part('content', get_post_format());
+                get_template_part('content/content', get_post_format());
 
             endwhile;
 
-            THEME_NAME_paging_nav();
+            the_posts_navigation();
 
         else :
 
-            get_template_part('content', 'none');
+            get_template_part('content/content', 'none');
 
         endif;
         ?>

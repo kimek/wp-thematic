@@ -1,6 +1,6 @@
 <?php
 add_filter('acf/settings/save_json', function() {
-    return get_stylesheet_directory() . '/wp/acf-json';
+    return get_stylesheet_directory() . '/functions/acf-json';
 });
 
 // Hide menu if production

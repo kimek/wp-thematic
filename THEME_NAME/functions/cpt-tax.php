@@ -20,6 +20,6 @@ $products = new CPT(
     array(
         'supports' => array('title', 'editor', 'thumbnail'),
         'menu_position' => 5,
-    )
+)
 );
 */

@@ -10,7 +10,7 @@
             wp_link_pages(array(
                 'before' => '<div class="page-links">' . __('Pages:', 'THEME_NAME'),
                 'after'  => '</div>',
-            ));
+        ));
         ?>
     </div>
     <footer class="article-footer">

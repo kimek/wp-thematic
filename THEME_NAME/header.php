@@ -12,18 +12,18 @@
 
 <body <?php body_class(); ?>>
     <header class="site-header" role="banner">
-        <div class="site-header--branding">
-            <h1 class="site-header--title">
+        <div class="site-header__branding">
+            <h1 class="site-header__title">
                 <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
                     <?php bloginfo('name'); ?>
                 </a>
             </h1>
-            <h2 class="site-header--description"><?php bloginfo('description'); ?></h2>
+            <h2 class="site-header__description"><?php bloginfo('description'); ?></h2>
         </div>
 
         <nav class="main-navigation" role="navigation">
-            <button class="menu-toggle"><?php _e('Menu', 'THEME_NAME'); ?></button>
-            <?php wp_nav_menu(array('container' => '', 'menu_class' => 'c-header-nav', 'theme_location' => 'primary')); ?>
+            <button class="js-nav-toggle"><?php _e('Menu', 'THEME_NAME'); ?></button>
+            <?php wp_nav_menu(array('container' => '', 'menu_class' => 'header-nav', 'theme_location' => 'primary')); ?>
         </nav>
     </header>
 

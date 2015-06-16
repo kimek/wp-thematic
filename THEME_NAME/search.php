@@ -13,15 +13,15 @@
             while (have_posts()) :
                 the_post();
 
-                get_template_part('content', 'search');
+                get_template_part('content/content', 'search');
 
             endwhile;
 
-            THEME_NAME_paging_nav();
+            the_posts_navigation();
 
         else :
 
-            get_template_part('content', 'none');
+            get_template_part('content/content', 'none');
 
         endif;
         ?>

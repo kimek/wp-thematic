@@ -63,8 +63,6 @@ class WpAdminCustomisations
         return $links;
     }
 
-    ////////////////////////////////////////////////////////////////////////////
-
     /**
      * Remove items from main navigation.
      */

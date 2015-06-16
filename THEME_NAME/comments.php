@@ -1,16 +1,10 @@
 <?php
-/*
- * If the current post is protected by a password and
- * the visitor has not yet entered the password we will
- * return early without loading the comments.
- */
+//If password protected return
 if (post_password_required()) {
     return;
 }
 ?>
 <div class="comments">
-
-    <?php // You can start editing here -- including this comment! ?>
 
     <?php if (have_comments()) : ?>
         <h2 class="comments-title">
@@ -31,9 +25,9 @@ if (post_password_required()) {
         <ol class="comment-list">
             <?php
                 wp_list_comments(array(
-                    'style'      => 'ol',
+                    'style' => 'ol',
                     'short_ping' => true,
-                ));
+            ));
             ?>
         </ol>
 
@@ -42,7 +36,7 @@ if (post_password_required()) {
             <h1 class="screen-reader-text"><?php _e('Comment navigation', 'THEME_NAME'); ?></h1>
             <div class="nav-previous"><?php previous_comments_link(__('&larr; Older Comments', 'THEME_NAME')); ?></div>
             <div class="nav-next"><?php next_comments_link(__('Newer Comments &rarr;', 'THEME_NAME')); ?></div>
-        </nav><!-- #comment-nav-below -->
+        </nav>
         <?php endif; // check for comment navigation ?>
 
     <?php endif; // have_comments() ?>
@@ -56,4 +50,4 @@ if (post_password_required()) {
 
     <?php comment_form(); ?>
 
-</div><!-- #comments -->
+</div>
