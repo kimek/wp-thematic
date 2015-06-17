@@ -61,7 +61,6 @@ function the_post_navigation() {
 }
 endif;
 
-dif;
 
 if (! function_exists('THEME_NAME_posted_on')) :
 /**
