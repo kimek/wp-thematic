@@ -5,7 +5,7 @@
         while (have_posts()) :
             the_post();
 
-            get_template_part('content/content', 'single');
+            get_template_part('theme-content/content', 'single');
 
             the_post_navigation();
 

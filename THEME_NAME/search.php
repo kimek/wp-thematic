@@ -12,7 +12,7 @@
             while (have_posts()) :
                 the_post();
 
-                get_template_part('content/content', 'search');
+                get_template_part('theme-content/content', 'search');
 
             endwhile;
 
@@ -20,7 +20,7 @@
 
         else :
 
-            get_template_part('content/content', 'none');
+            get_template_part('theme-content/content', 'none');
 
         endif;
         ?>

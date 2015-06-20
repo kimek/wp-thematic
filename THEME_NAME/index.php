@@ -7,7 +7,7 @@
             while (have_posts()) :
                 the_post();
 
-                get_template_part('content/content', get_post_format());
+                get_template_part('theme-content/content', get_post_format());
 
             endwhile;
 
@@ -15,7 +15,7 @@
 
         else :
 
-            get_template_part('content/content', 'none');
+            get_template_part('theme-content/content', 'none');
 
         endif;
         ?>
