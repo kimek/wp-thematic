@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Give posts a different name
  */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Make global customisations to the WP Theme
  */

@@ -1,5 +1,5 @@
 <?php
-//If password protected return
+// If password protected return
 if (post_password_required()) {
     return;
 }

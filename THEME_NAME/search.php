@@ -4,7 +4,6 @@
         <?php
         if (have_posts()) :
         ?>
-
             <header class="main-header">
                 <h1 class="main-title"><?php printf(__('Search Results for: %s', 'THEME_NAME'), '<span>' . get_search_query() . '</span>'); ?></h1>
             </header>
@@ -25,7 +24,6 @@
 
         endif;
         ?>
-
     </main>
 
 <?php

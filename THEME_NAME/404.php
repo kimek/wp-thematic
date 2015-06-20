@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
     <main role="main">
-
         <section class="error-404 not-found">
             <header class="main-header">
                 <h1 class="main-title"><?php _e('Oops! That page can&rsquo;t be found.', 'THEME_NAME'); ?></h1>
@@ -24,7 +23,6 @@
 
             </div>
         </section>
-
     </main>
 
 <?php get_footer();
