@@ -8,6 +8,10 @@ include_once('customisations-theme.php');
 
 include_once('template-tags.php');
 
-//$custom_admin = new WpAdminCustomisations();
-//$custom_theme = new WpThemeCustomisations();
-//$custom_postname = new WpEditPostName('news', 'News');
+/*
+add_action('init', function () {
+    new WpAdminCustomisations;
+    new WpThemeCustomisations;
+    new WpEditPostName('news', 'News');
+});
+*/
