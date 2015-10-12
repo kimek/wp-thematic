@@ -69,12 +69,12 @@ class WpAdminCustomisations
     {
         global $menu, $current_user;
 
-        unset($menu[10]); // Media
-        unset($menu[70]); // Profile
+        // unset($menu[10]); // Media
+        // unset($menu[70]); // Profile
 
         if (! current_user_can('manage_options')) {
-            unset($menu[20]); // Pages
-            unset($menu[75]); // Tools
+            // unset($menu[20]); // Pages
+            // unset($menu[75]); // Tools
         }
     }
 
